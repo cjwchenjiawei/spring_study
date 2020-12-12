@@ -1,0 +1,5 @@
+com\cjw\proxy\UserDao.class
+com\cjw\proxy\MyInterceptor.class
+com\cjw\proxy\MyInvocationHandler.class
+com\cjw\proxy\UserDaoImpl.class
+com\cjw\proxy\UserProxy.class

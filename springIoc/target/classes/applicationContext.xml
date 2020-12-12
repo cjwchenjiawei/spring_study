@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.cjw.com.cjw.po.User">-->
+<!--        <constructor-arg name="id" value="1"></constructor-arg>-->
+<!--        <constructor-arg name="username" value="熊猫"></constructor-arg>-->
+<!--    </bean>-->
+
+    <bean id="dept" class="com.cjw.com.cjw.po.Dept">
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="deptName" value="人事部"></constructor-arg>
+    </bean>
+
+    <bean id="user" class="com.cjw.com.cjw.po.User">
+        <property name="id" value="1"></property>
+        <property name="username" value="zhangsan"></property>
+        <property name="dept" ref="dept"></property>
+        <property name="arrs">
+            <array>
+                <value>sadas</value>
+                <value>qwewq</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>关于</value>
+                <value>丈夫</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <ref bean="dept"></ref>
+                <ref bean="dept"></ref>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="key1" value="aaa"></entry>
+                <entry key="key2" value="bbb"></entry>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="db">mysql</prop>
+                <prop key="driver">com.jdbc.mysql.Driver</prop>
+            </props>
+        </property>
+        <property name="birthday">
+            <bean factory-bean="dateFormat" factory-method="parse">
+                <constructor-arg value="2020-11-11"></constructor-arg>
+            </bean>
+        </property>
+    </bean>
+    <bean id="dateFormat" class="java.text.SimpleDateFormat">
+        <constructor-arg name="pattern" value="yyyy-MM-dd"></constructor-arg>
+    </bean>
+</beans>
