@@ -3,7 +3,7 @@
 <mapper namespace="com.cjw.dao.UserDao">
 
     <resultMap id="userMap" type="User">
-        <id column="user_pkid" property="id"></id>
+        <id column="id" property="id"></id>
         <result column="username" property="username"></result>
         <result column="nickname" property="nickname"></result>
         <result column="password" property="password"></result>
@@ -14,4 +14,8 @@
         select * from t_user
     </select>
 
+    <insert id="insertUser" parameterType="User">
+        insert into t_user(username,password,nickname,reg_time)
+        values(#{username},#{password},#{nickname},#{regTime})
+    </insert>
 </mapper>

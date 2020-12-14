@@ -8,4 +8,6 @@ import java.util.List;
 @Component
 public interface UserDao {
     public List<User> getAll();
+
+    public int insertUser(User user);
 }

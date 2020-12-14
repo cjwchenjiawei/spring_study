@@ -1016,7 +1016,7 @@ SELECT|sys.sys_config
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="311" parent="295" name="user_tel">
+    <column id="311" parent="295" name="nickname">
       <Position>2</Position>
       <DataType>varchar(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1034,7 +1034,7 @@ SELECT|sys.sys_config
       <NotNull>1</NotNull>
       <Collation>utf8mb4_unicode_ci</Collation>
     </column>
-    <column id="314" parent="295" name="registration_time">
+    <column id="314" parent="295" name="reg_time">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>

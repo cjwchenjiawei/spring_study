@@ -11,12 +11,15 @@
         <module name="springAopAnnotation" />
         <module name="springProxy" />
         <module name="springIoc" />
+        <module name="springMybatisPlus" />
         <module name="springAop" />
+        <module name="springMybatisAnnotation" />
         <module name="springMybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="1" target="8" />
+      <module name="test" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

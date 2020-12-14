@@ -3,5 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/springMybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springMybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMybatisAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMybatisAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMybatisPlus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springMybatisPlus/src/main/resources" charset="UTF-8" />
   </component>
 </project>
